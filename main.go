@@ -33,7 +33,7 @@ var (
 
 const (
 	host = "localhost"
-	port = "23234"
+	port = "22"
 )
 
 type sessionState uint

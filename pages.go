@@ -47,7 +47,7 @@ Welcome to ssh l0calhost.xyz
 }
 
 func (m *model) getResume() string {
-	t1 := "Hi I'm still trying to figure out a way to render a pdf in a terminal until then you can view it " + termlink.Link("here", "https://github.com/siddhantsingh9811")
+	t1 := "Hi I'm still trying to figure out a way to render a pdf in a terminal until then you can view it " + termlink.Link("here", "https://l0calhost.xyz/resume.html")
 
 	t1 = lipgloss.PlaceHorizontal(0, lipgloss.Center, t1)
 	t1 = lipgloss.PlaceVertical(20, lipgloss.Center, t1)
@@ -113,7 +113,7 @@ func (m *model) getProjects() string {
 func (m *model) getAbout() string {
 	t1 := "Hi im "
 	t1 += bold.Render(mainColour.Render("Siddhant Singh\n"))
-	t2 := "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages\n"
+	t2 := "Welcome to l0calhost.xyz it runs on a really old PC that i turned into a server, it sits at my home and takes care of most of my cloud hosting needs. I'm a twenty year-old Computer Science student who's fond of coffee, playing guitar and hackathons, I'm an experienced Fullstack Web Developer and I also have keen interest in Devops, Data Science and AI. I'm currently in my final year at UPES Dehradun pursuing B.Tech CSE with a major in Devops."
 	t2 = width.Render(t2)
 	t1 = lipgloss.JoinVertical(0, t1, t2)
 	t3 := "Made with "
