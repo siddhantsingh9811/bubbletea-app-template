@@ -80,29 +80,29 @@ func (m *model) getProjects() string {
 	p := projects{
 		box{
 			title:        "DocConnect",
-			description:  "DocConnect is an all-in-one application designed specifically for doctprovidingors, them with the tools and features they need to manage their patients, appointments, and documents in a seamless and efficient manner. With its patient and appointment management system, doctors can easily schedule and manage their appointments with ease, helping to streamline their workflow and save time.",
+			description:  "A healthcare app for doctors integrating management, collaboration, and AI-driven insights.",
 			technologies: "React, NodeJs, Google Cloud, Docker",
 			link:         "https://github.com/siddhantsingh9811/doc-connect"},
 		box{
 			title:        "Zelto",
-			description:  "We developed Zelto as our minor project, it is a scooty rental application specifically designed for students in the area around our university. This app allows students to effortlessly book rides and compare prices, ensuring they can find the most affordable and convenient transportation options.",
+			description:  "A student-focused scooty rental app enabling easy ride booking and price comparison.",
 			technologies: "React, NodeJs, ExpressJs, PWAs, Docker",
 			link:         "https://github.com/siddhantsingh9811/zelto-frontend"},
 		box{
 			title:        "Kat Social Media",
-			description:  "Leveraged my expertise in front-end and back-end technologies to develop a social media application from inception and deployed on a local server in alpha phase with over 20 users.",
+			description:  "A simple social media application inspired by twitter (back when it wasnt.. well whatever it is now)",
 			technologies: "React, NodeJs, Strapi, Vercel, Nginx",
 			link:         "https://github.com/siddhantsingh9811/kat-social-media"},
 		box{
 			title:        "Document Classification Model",
-			description:  "A CNN Based Document Classification model trained during my internship at Eisenvault which was trained from scratch finally achieving an accuracy of 92%.",
+			description:  "A CNN-based document classification model developed while at Eisenvault, achieving 92% accuracy.",
 			technologies: "Tensorflow, Pandas, Google Colab, FastAPI",
 			link:         "https://github.com/siddhantsingh9811/document-classification-model"},
 		box{
-			title:        "Medical Analysis Application using ML",
-			description:  "Played a pivotal role in the development of an open source project focused on Pneumonia detection using machine learning. Independent contribution to the project in designing and training the machine learning model, while also taking charge of the frontend and backend development of the application.",
-			technologies: "Tensorflow, OpenCV, FastAPI, Google Colab, React",
-			link:         "https://github.com/siddhantsingh9811/OSC-Medical-Analysis-Application-Using-ML"},
+			title:        "Pomodoro Timer",
+			description:  "A pomodoro timer i coded to help with studying instead of actually studying.",
+			technologies: "React, NodeJs, PWAs, Vercel",
+			link:         "https://github.com/siddhantsingh9811/pomodoro"},
 	}
 
 	for _, b := range p {
@@ -113,7 +113,7 @@ func (m *model) getProjects() string {
 func (m *model) getAbout() string {
 	t1 := "Hi im "
 	t1 += bold.Render(mainColour.Render("Siddhant Singh\n"))
-	t2 := "Welcome to l0calhost.xyz it runs on a really old PC that i turned into a server, it sits at my home and takes care of most of my cloud hosting needs. I'm a twenty year-old Computer Science student who's fond of coffee, playing guitar and hackathons, I'm an experienced Fullstack Web Developer and I also have keen interest in Devops, Data Science and AI. I'm currently in my final year at UPES Dehradun pursuing B.Tech CSE with a major in Devops."
+	t2 := "I've been programming and competing in hackathons for over 7 years, mostly experienced in Web Development, Devops and AI but I'm always exploring new tech that I find interesting."
 	t2 = width.Render(t2)
 	t1 = lipgloss.JoinVertical(0, t1, t2)
 	t3 := "Made with "
